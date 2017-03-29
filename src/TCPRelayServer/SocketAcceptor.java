@@ -1,6 +1,6 @@
 package TCPRelayServer;
 
-import constants.MyConstants;
+import Constants.MyConstants;
 
 import javax.net.ssl.SSLServerSocket;
 import javax.net.ssl.SSLServerSocketFactory;

@@ -1,6 +1,6 @@
 package relay;
 
-import constants.MyConstants;
+import Constants.MyConstants;
 import relay.thread.ServerThread;
 
 import java.io.IOException;

@@ -10,7 +10,7 @@ public class DroneServer {
 
     public static void main(String... args){
 /*
-        System.out.println("Welcome openCV : " + constants.MyConstants.CV_VERSION);
+        System.out.println("Welcome openCV : " + Constants.MyConstants.CV_VERSION);
 
         Mat m = new Mat(5, 10, CvType.CV_8UC1, new Scalar(0));
 

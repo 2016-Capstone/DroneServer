@@ -1,6 +1,6 @@
 package relay.service;
 
-import constants.MyConstants;
+import Constants.MyConstants;
 import relay.core.GPS;
 
 /**

@@ -1,4 +1,4 @@
-package constants;
+package Constants;
 
 import TCPRelayServer.M_InetSocketAddress;
 
@@ -31,7 +31,7 @@ public class MyConstants {
     public static final int MIN_THREAD_POOL_SIZE = 2;
     public static final int MAX_THREAD_POOL_SIZE = 64;
     public static int BUFSIZE = 1024;
-    public static final int DEFAULT_PORT = 9090;
+    public static final int DEFAULT_PORT = 443;
 
     public static final HashMap USER_TABLE = new HashMap();
 

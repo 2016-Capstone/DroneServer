@@ -1,6 +1,6 @@
 package relay.core;
 
-import constants.MyConstants;
+import Constants.MyConstants;
 
 import java.io.PrintWriter;
 

@@ -1,6 +1,6 @@
 package TCPRelayServer;
 
-import constants.MyConstants;
+import Constants.MyConstants;
 
 import java.io.*;
 import java.net.*;
