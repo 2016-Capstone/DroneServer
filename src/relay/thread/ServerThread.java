@@ -152,7 +152,7 @@ public class ServerThread extends Thread {
                 PrintWriter pw = target.getPrintWriter();
                 pw.print(cmd);
                 pw.flush();
-                break;
+               // break;
             }
         }
     }
@@ -175,7 +175,7 @@ public class ServerThread extends Thread {
                 PrintWriter pw = target.getPrintWriter();
                 pw.print(gps);
                 pw.flush();
-                break;
+                //break;
             }
         }
     }
