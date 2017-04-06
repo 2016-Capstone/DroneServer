@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="754c8103-df4b-41ad-8fc9-a0a9484757c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exceptions/InvalidUserException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants$PROTO_DVTYPE.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants$PROTO_DVTYPE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants$PROTO_MSGTYPE.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants$PROTO_MSGTYPE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/constants/MyConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/relay/RelayServer.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/relay/RelayServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/relay/service/MsgAnalyzer.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/relay/service/MsgAnalyzer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DroneServer/relay/thread/ServerThread.class" afterPath="$PROJECT_DIR$/out/production/DroneServer/relay/thread/ServerThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DroneServer.iml" afterPath="$PROJECT_DIR$/DroneServer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constants/MyConstants.java" afterPath="$PROJECT_DIR$/src/Constants/MyConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relay/RelayServer.java" afterPath="$PROJECT_DIR$/src/relay/RelayServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relay/service/MsgAnalyzer.java" afterPath="$PROJECT_DIR$/src/relay/service/MsgAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/relay/thread/ServerThread.java" afterPath="$PROJECT_DIR$/src/relay/thread/ServerThread.java" />
     </list>
     <ignored path="DroneServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,14 +100,14 @@
           <file leaf-file-name="MyConstants.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Constants/MyConstants.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="415">
-                  <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
+                <state relative-caret-position="41">
+                  <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1534#1535#0" expanded="true" />
-                    <element signature="e#1592#1593#0" expanded="true" />
-                    <element signature="e#1636#1637#0" expanded="true" />
-                    <element signature="e#1713#1714#0" expanded="true" />
+                    <element signature="e#1533#1534#0" expanded="true" />
+                    <element signature="e#1591#1592#0" expanded="true" />
+                    <element signature="e#1635#1636#0" expanded="true" />
+                    <element signature="e#1712#1713#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -168,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/exceptions/ExceptionTypes.java" />
         <option value="$PROJECT_DIR$/src/exceptions/InvalidUserException.java" />
         <option value="$PROJECT_DIR$/src/DroneServer.java" />
-        <option value="$PROJECT_DIR$/src/Constants/MyConstants.java" />
         <option value="$PROJECT_DIR$/src/relay/thread/ServerThread.java" />
+        <option value="$PROJECT_DIR$/src/Constants/MyConstants.java" />
       </list>
     </option>
   </component>
@@ -637,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490834781026</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[EDIT] log printer and exception handler">
+      <created>1491445810289</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491445810289</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,7 +687,8 @@
     <MESSAGE value="[ADD] PROTOCOL" />
     <MESSAGE value="[EDIT] PORT" />
     <MESSAGE value="[EDIT] ROUTINE" />
-    <option name="LAST_COMMIT_MESSAGE" value="[EDIT] ROUTINE" />
+    <MESSAGE value="[EDIT] log printer and exception handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="[EDIT] log printer and exception handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -786,10 +783,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,10 +861,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -916,10 +913,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -958,10 +955,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,10 +997,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1022,10 +1019,10 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1194,26 +1191,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/MyConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/relay/thread/ServerThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants/MyConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
