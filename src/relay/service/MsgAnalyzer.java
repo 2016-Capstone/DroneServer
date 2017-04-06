@@ -50,7 +50,7 @@ public class MsgAnalyzer {
         return null;
     }
 
-    public static boolean IS_YOU(String msg){
+    public static boolean ARE_YOU(String msg){
         String[] input = msg.split(MSG_DELI);
         String[] values;
 

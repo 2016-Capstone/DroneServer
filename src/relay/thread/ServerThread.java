@@ -1,6 +1,7 @@
 package relay.thread;
 
 import Constants.MyConstants;
+import exceptions.InvalidUserException;
 import relay.core.User;
 import relay.service.MsgAnalyzer;
 
@@ -31,12 +32,14 @@ public class ServerThread extends Thread {
     public void run() {
         try {
             service();
+        } catch (InvalidUserException ex){
+            /*DO NOTHING*/
         } catch (Exception ex) {
             MyConstants.log("**" + userIP + ":" + userPort + "** connection closed");
+        } finally {
             synchronized (MyConstants.USER_TABLE) {
                 MyConstants.USER_TABLE.remove(userPort);
             }
-        } finally {
             try {
                 closeAll();
             } catch (Exception e) {
@@ -45,7 +48,7 @@ public class ServerThread extends Thread {
         }
     }
 
-    private void service() throws IOException {
+    private void service() throws Exception {
         bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         printWriter = new PrintWriter(socket.getOutputStream(), true);
         user = new User(userIP, userPort, printWriter);
@@ -59,23 +62,25 @@ public class ServerThread extends Thread {
 
         while (true) {
             str = bufferedReader.readLine();
-            if (str.equals("\n")) continue;
+            if (str.equals("\n") || str.equals("")) continue;
 
             if (str == null) {
                 MyConstants.log(userIP + ":" + userPort + " go out");
-                synchronized (MyConstants.USER_TABLE) {
-                    MyConstants.USER_TABLE.remove(userPort);
-                }
+//                synchronized (MyConstants.USER_TABLE) {
+//                    MyConstants.USER_TABLE.remove(userPort);
+//                }
                 throw new IOException();
             }
 
 
             if (isFirst) {
-                if (!MsgAnalyzer.IS_YOU(str)) {
+                if (!MsgAnalyzer.ARE_YOU(str)) {
                     printWriter.print("Invalid user");
-                    MyConstants.log("IS_YOU", userIP + ":" + userPort + "==> Invalid user");
-                    throw new IOException();
+//                    MyConstants.log("ARE_YOU", userIP + ":" + userPort + "==> Invalid user");
+                    throw new InvalidUserException(userIP, userPort);
                 } else {
+                    MyConstants.log(userIP + ":" + userPort + " is Connected");
+
                     int dvtype = MsgAnalyzer.GET_VALUE_DVTYPE(str);
                     if (dvtype == MyConstants.PROTO_DVTYPE.DRONE.ordinal()) {
                         user.setDvtype(MyConstants.PROTO_DVTYPE.DRONE);
@@ -83,7 +88,7 @@ public class ServerThread extends Thread {
                         user.setDvtype(MyConstants.PROTO_DVTYPE.PHONE);
                     } else {
                         printWriter.print("Invalid device");
-                        MyConstants.log("IS_YOU", userIP + ":" + userPort + "==> Invalid device");
+                        MyConstants.log("ARE_YOU", userIP + ":" + userPort + "==> Invalid device");
                         throw new IOException();
                     }
                     printWriter.print("HELLO");
@@ -106,7 +111,7 @@ public class ServerThread extends Thread {
             } else if (msgtypeValue == MyConstants.PROTO_MSGTYPE.PICTURE.ordinal()) {
                 MyConstants.log("INPUT TYPE", MyConstants.PROTO_MSGTYPE.PICTURE.toString());
             } else {
-                MyConstants.log("Invalid MSG");
+                MyConstants.log("\tInvalid MSG");
                 continue;
             }
 

@@ -24,7 +24,7 @@ public class RelayServer {
                 socket = serverSocket.accept();
                 ServerThread serverTh = new ServerThread(socket);
                 serverTh.start();
-                MyConstants.log(socket.getInetAddress() + ":" + socket.getPort() + " is Connected");
+//                MyConstants.log(socket.getInetAddress() + ":" + socket.getPort() + " is Connected");
             }
         } finally {
             if (socket != null) {

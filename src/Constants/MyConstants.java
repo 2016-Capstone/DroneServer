@@ -5,6 +5,8 @@ import TCPRelayServer.M_InetSocketAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.channels.SocketChannel;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -31,9 +33,11 @@ public class MyConstants {
     public static final int MIN_THREAD_POOL_SIZE = 2;
     public static final int MAX_THREAD_POOL_SIZE = 64;
     public static int BUFSIZE = 1024;
-    public static final int DEFAULT_PORT = 443;
+    public static final int DEFAULT_PORT = 9999;
 
-    public static final HashMap USER_TABLE = new HashMap();
+       public static final HashMap USER_TABLE = new HashMap();
+
+    public static SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("MM/dd hh:mm");
 
 /*    public static final Queue<String> CMD_FIFO = new LinkedList<>();
 
@@ -46,14 +50,18 @@ public class MyConstants {
     }
 */
     public static void log(String method_name, String msg) {
-        System.out.println('[' + method_name + "]: " + msg);
+        System.out.println(getCurrentTime() + '[' + method_name + "]: " + msg);
     }
 
     public static void log(String msg) {
-        System.out.println(msg);
+        System.out.println(getCurrentTime() + msg);
     }
 
-   public static String toString(SocketChannel ch) {
+    public static String getCurrentTime(){
+        return "[" + DATE_FORMAT.format(new Date()).toString() + "] ";
+    }
+
+    public static String toString(SocketChannel ch) {
         StringBuilder sb=new StringBuilder();
         Socket sock;
 
